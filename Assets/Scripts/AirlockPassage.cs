@@ -1,4 +1,4 @@
-using System;
+using System.Collections;
 using UnityEngine;
 
 public class AirlockPassage : MonoBehaviour {
@@ -6,22 +6,31 @@ public class AirlockPassage : MonoBehaviour {
     public Door entranceDoor;
     public Door exitDoor;
     private bool isTriggered = false;
+    private GameObject roomToDelete;
     private Rooms nextRoom;
 
-    public void Setup(Rooms _nextRoom) {
+    public void Setup(Rooms _nextRoom, GameObject _roomToDelete) {
         nextRoom = _nextRoom;
+        roomToDelete = _roomToDelete;
     }
     private void OnTriggerEnter(Collider other) {
         if (!isTriggered && other.gameObject.IsPlayer()) {
             isTriggered = true;
-            Trigger();
+            StartCoroutine(Trigger());
         }
     }
 
-    private void Trigger() {
+    private IEnumerator Trigger() {
         entranceDoor.interactable = false;
         entranceDoor.Close();
         GameObject newRoom = Instantiate(RoomMasterList.Instance.GetRoomForEnum(nextRoom));
         newRoom.transform.SetPositionAndRotation(exitDoor.mainT.position, exitDoor.mainT.rotation);
+        mainT.SetParent(newRoom.transform, true);
+        yield return WaitUtil.GetWait(Door.DOOR_CLOSE_TIME);
+        if(roomToDelete != null) {
+            Destroy(roomToDelete);
+        } else {
+            Debug.Log("No Room to Delete!");
+        }
     }
 }

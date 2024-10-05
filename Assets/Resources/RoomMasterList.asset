@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: RoomMasterList
   m_EditorClassIdentifier: 
   startRoom: {fileID: 5876769581304742914, guid: 105156eb2e0cede4a9bc23dccf67724f, type: 3}
-  kitchenRoom: {fileID: 5876769581304742914, guid: 105156eb2e0cede4a9bc23dccf67724f, type: 3}
+  kitchenRoom: {fileID: 5876769581304742914, guid: a20c8ccb9335a7b449887bc3396e48d9, type: 3}

@@ -1,10 +1,10 @@
-using System;
 using UnityEngine;
 
 public class Door : InteractableObject {
     public Transform mainT;
     public Collider mainCollider;
     public Transform hingeT;
+    public const float DOOR_CLOSE_TIME = 0.8f;
 
     private bool isOpen = false;
 
@@ -21,7 +21,7 @@ public class Door : InteractableObject {
         Quaternion startRotation = hingeT.localRotation;
         Quaternion endRotation = isOpen ? openRotation : closedRotation;
         this.EnsureCoroutineStopped(ref animateRoutine);
-        animateRoutine = this.CreateWorldAnimRoutine(1f, (float progress) => {
+        animateRoutine = this.CreateWorldAnimRoutine(DOOR_CLOSE_TIME, (float progress) => {
             hingeT.localRotation = Quaternion.Lerp(startRotation, endRotation, Easing.easeInOutSine(0, 1, progress));
         });
     }
