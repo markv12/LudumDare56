@@ -34,7 +34,7 @@ namespace UnityStandardAssets.Characters.FirstPerson {
         }
 
         public void LookRotation() {
-            float speedSetting = 0.8f;
+            float speedSetting = SettingsManager.LookSpeed;
             if (InputUtil.IsMobile) {
                 if (moveAndLook.HasLookInput) {
                     float xRot = moveAndLook.lookInput.y * XSensitivity * speedSetting;

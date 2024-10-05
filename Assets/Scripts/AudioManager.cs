@@ -25,7 +25,7 @@ public class AudioManager : MonoBehaviour
 
     public void PlaySFX(AudioClip clip, float volume, float pitch = 1) {
 		AudioSource source = GetNextAudioSource();
-		source.volume = volume /** SettingsManager.SFXVolume*/;
+		source.volume = volume * SettingsManager.SFXVolume;
 		source.pitch = pitch;
 		source.PlayOneShot(clip);
 	}

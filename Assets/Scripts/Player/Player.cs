@@ -12,6 +12,7 @@ public class Player : MonoBehaviour {
 
     public CharacterController characterController;
     public FirstPersonController firstPersonController;
+    public SettingsUI settingsUI;
 
     public Vector3 FaceDirection => mainCameraTransform.forward;
 
@@ -26,7 +27,10 @@ public class Player : MonoBehaviour {
     }
 
     private void Update() {
-        if(Time.frameCount % 5 == 0 && t.position.y < -120) {
+        if (InputUtil.Cancel.WasPressed || InputUtil.PauseMenu.WasPressed) {
+            OpenSettingsUI();
+        }
+        if (Time.frameCount % 5 == 0 && t.position.y < -120) {
             ReturnToEntrance();
         }
     }
@@ -53,5 +57,12 @@ public class Player : MonoBehaviour {
             characterController.enabled = true;
             firstPersonController.enabled = true;
         }
+    }
+
+    public void OpenSettingsUI() {
+        SetFPSControllerActive(false);
+        settingsUI.Open(false, () => {
+            SetFPSControllerActive(true);
+        });
     }
 }
