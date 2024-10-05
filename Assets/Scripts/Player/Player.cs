@@ -23,7 +23,6 @@ public class Player : MonoBehaviour {
         mainCameraTransform = mainCamera.transform;
         playerStartPos = t.position;
         playerStartRotation = t.rotation;
-        SplatManager.Reset();
     }
 
     private void Update() {

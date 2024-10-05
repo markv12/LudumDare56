@@ -34,7 +34,6 @@ namespace UnityStandardAssets.Characters.FirstPerson {
         private Vector3 moveDir = Vector3.zero;
         private Coroutine wallJumpRoutine = null;
         private Vector3 wallJumpMoveDir = Vector3.zero;
-        private Coroutine slideRoutine = null;
         private Vector3 slideMoveDir = Vector3.zero;
         private CharacterController charController;
         private CollisionFlags lastCollisionFlag;
