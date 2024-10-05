@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2021017585886656575}
   - component: {fileID: 3033316701693943812}
   m_Layer: 0
-  m_Name: WrongDoor
+  m_Name: Door3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,8 +45,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainT: {fileID: 2021017585886656575}
-  roomToDelete: {fileID: 5876769581304742914}
-  room: 0
 --- !u!1 &1017406670688713730
 GameObject:
   m_ObjectHideFlags: 0
@@ -146,7 +144,7 @@ GameObject:
   - component: {fileID: 8112111843570237667}
   - component: {fileID: 2581762378458560986}
   m_Layer: 0
-  m_Name: RightDoor
+  m_Name: Door1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -180,8 +178,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainT: {fileID: 8112111843570237667}
-  roomToDelete: {fileID: 5876769581304742914}
-  room: 1
 --- !u!1 &2968418601013212429
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,7 +378,7 @@ GameObject:
   - component: {fileID: 2164215914068075306}
   - component: {fileID: 845113326999901206}
   m_Layer: 0
-  m_Name: WrongDoor2
+  m_Name: Door2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -416,8 +412,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainT: {fileID: 2164215914068075306}
-  roomToDelete: {fileID: 5876769581304742914}
-  room: 0
 --- !u!1 &4481051479074471144
 GameObject:
   m_ObjectHideFlags: 0
@@ -971,6 +965,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5356320492992876461}
+  - component: {fileID: 2576761147527226274}
   m_Layer: 0
   m_Name: StartRoom
   m_TagString: Untagged
@@ -996,6 +991,23 @@ Transform:
   - {fileID: 6641109525554701304}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2576761147527226274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5876769581304742914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49328c4f1452e834f9a6ee7a57df1597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextRoom: 1
+  spawnLocations:
+  - {fileID: 2581762378458560986}
+  - {fileID: 845113326999901206}
+  - {fileID: 3033316701693943812}
 --- !u!1 &6131076235315836905
 GameObject:
   m_ObjectHideFlags: 0
