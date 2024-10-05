@@ -27,7 +27,6 @@ public class PlayerInteraction : MonoBehaviour {
     private static void TryToInteract(GameObject go) {
         if (go.TryGetComponent(out InteractableObject io)) {
             io.Interact();
-            return;
         } else {
             io = go.GetComponentInChildren<InteractableObject>();
             if (io != null) {

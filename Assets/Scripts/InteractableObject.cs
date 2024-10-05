@@ -1,7 +1,13 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
-public class InteractableObject : MonoBehaviour {
-    public virtual void Interact() {
-        Debug.Log("Interacted!");
+public abstract class InteractableObject : MonoBehaviour {
+    [NonSerialized] public bool interactable = true;
+    public void Interact() {
+        if (interactable) {
+            DoInteraction();
+        }
     }
+
+    protected abstract void DoInteraction();
 }
