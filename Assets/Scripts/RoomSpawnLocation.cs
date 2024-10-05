@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class RoomSpawnLocation : MonoBehaviour {
@@ -11,8 +12,9 @@ public class RoomSpawnLocation : MonoBehaviour {
         }
     }
 
-    private void Awake() {
+    private IEnumerator Start() {
         EnsurePrefab();
+        yield return null;
         AirlockPassage newAirlock = Instantiate(airlockPassagePrefab);
         newAirlock.mainT.SetPositionAndRotation(mainT.position, mainT.rotation);
         newAirlock.Setup(room);

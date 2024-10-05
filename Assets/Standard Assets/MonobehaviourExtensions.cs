@@ -108,4 +108,9 @@ public static class MonoBehaviourExtensions {
 
         return group.ToArray();
     }
+
+    public const string PLAYER_TAG = "Player";
+    public static bool IsPlayer(this GameObject value) {
+        return value.CompareTag(PLAYER_TAG);
+    }
 }

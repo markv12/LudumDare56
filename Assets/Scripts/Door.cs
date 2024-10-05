@@ -1,6 +1,8 @@
+using System;
 using UnityEngine;
 
 public class Door : InteractableObject {
+    public Transform mainT;
     public Collider mainCollider;
     public Transform hingeT;
 
@@ -22,5 +24,9 @@ public class Door : InteractableObject {
         animateRoutine = this.CreateWorldAnimRoutine(1f, (float progress) => {
             hingeT.localRotation = Quaternion.Lerp(startRotation, endRotation, Easing.easeInOutSine(0, 1, progress));
         });
+    }
+
+    public void Close() {
+        Animate(false);
     }
 }

@@ -9,34 +9,35 @@ public class PlayerInteraction : MonoBehaviour {
     public Sprite interactableSprite;
 
     private readonly RaycastHit[] raycastResults = new RaycastHit[1];
+    private const float RAYCAST_LENGTH = 3;
     void Update() {
         reticleImage.sprite = regularSprite;
         //Debug.DrawRay(mainCameraTransform.position, mainCameraTransform.forward, Color.red, 1000);
         Ray ray = new Ray(mainCameraTransform.position, mainCameraTransform.forward);
-        if (Physics.RaycastNonAlloc(ray, raycastResults, 5, layerMask) > 0) {
-            reticleImage.sprite = interactableSprite;
-        }
-
-        if (InputUtil.Interact.WasPressed) {
-            if (Physics.RaycastNonAlloc(ray, raycastResults, 5, layerMask) > 0) {
-                TryToInteract(raycastResults[0].transform.gameObject);
-            }
-        }
-    }
-
-    private static void TryToInteract(GameObject go) {
-        if (go.TryGetComponent(out InteractableObject io)) {
-            io.Interact();
-        } else {
-            io = go.GetComponentInChildren<InteractableObject>();
-            if (io != null) {
-                io.Interact();
-            } else {
-                io = go.GetComponentInParent<InteractableObject>();
-                if (io != null) {
+        int hitCount = Physics.RaycastNonAlloc(ray, raycastResults, RAYCAST_LENGTH, layerMask);
+        if (hitCount > 0) {
+            InteractableObject io = GetInteractableObject(raycastResults[0].transform.gameObject);
+            if(io != null && io.interactable) {
+                reticleImage.sprite = interactableSprite;
+                if (InputUtil.Interact.WasPressed) {
                     io.Interact();
                 }
             }
         }
+    }
+
+    private static InteractableObject GetInteractableObject(GameObject go) {
+        if (go.TryGetComponent(out InteractableObject io)) {
+            return io;
+        }
+        io = go.GetComponentInChildren<InteractableObject>();
+        if (io != null) {
+            return io;
+        }
+        io = go.GetComponentInParent<InteractableObject>();
+        if (io != null) {
+            return io;
+        }
+        return null;
     }
 }
