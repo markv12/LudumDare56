@@ -6,6 +6,7 @@ public class RoomMasterList : ScriptableObject {
     public GameObject kitchenRoom;
     public GameObject bedRoom;
     public GameObject hallwayRoom;
+    public GameObject endRoom;
 
     private static RoomMasterList instance;
     public static RoomMasterList Instance {
@@ -25,6 +26,8 @@ public class RoomMasterList : ScriptableObject {
                 return bedRoom;
             case Rooms.Hallway:
                 return hallwayRoom;
+            case Rooms.EndRoom:
+                return endRoom;
             default:
                 return startRoom;
         }
