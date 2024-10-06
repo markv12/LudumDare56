@@ -473,7 +473,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextRoom: 3
-  spawnLocations:
+  spawnLocationsLCR:
   - {fileID: 3033316701693943812}
   - {fileID: 845113326999901206}
   - {fileID: 2581762378458560986}
@@ -1144,7 +1144,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3431172757708033560, guid: e232d620fe74f914ab0ea09ac97b3c1a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.014
+      value: 0.008
       objectReference: {fileID: 0}
     - target: {fileID: 3431172757708033560, guid: e232d620fe74f914ab0ea09ac97b3c1a, type: 3}
       propertyPath: m_LocalRotation.w
