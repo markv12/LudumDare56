@@ -132,7 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 40701721}
   m_Layer: 6
-  m_Name: StartDoor
+  m_Name: StartDoor (Don't Move)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
