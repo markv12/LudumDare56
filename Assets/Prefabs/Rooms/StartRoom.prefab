@@ -1213,6 +1213,7 @@ MonoBehaviour:
   - {fileID: 3033316701693943812}
   - {fileID: 845113326999901206}
   - {fileID: 2581762378458560986}
+  anomalies: []
 --- !u!1 &6131076235315836905
 GameObject:
   m_ObjectHideFlags: 0
@@ -1274,7 +1275,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c43d8437c11296b46a4d9021623943ac, type: 2}
+  - {fileID: 2100000, guid: 1d655885ce4a3b2468ff82f9a390ee5d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

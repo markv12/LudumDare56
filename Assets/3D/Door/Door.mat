@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: DoorFrame
+  m_Name: Door
   m_Shader: {fileID: 4800000, guid: 2fcfef08a58882d4f9a120a5633e50c0, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -24,14 +24,14 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: ede93e6b9dfba794b8a8a127e8b7a90a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
     - _Outline_Width: 0.01
     m_Colors:
-    - _Color: {r: 0.9, g: 0.9, b: 0.9, a: 1}
+    - _Color: {r: 0.98, g: 0.98, b: 0.98, a: 1}
     - _Outline_Color: {r: 0, g: 0, b: 0, a: 1}
     - _WorldScale: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
