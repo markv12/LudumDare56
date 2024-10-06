@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Room : MonoBehaviour {
     public Rooms nextRoom;
-    public RoomSpawnLocation[] spawnLocations;
+    public RoomSpawnLocation[] spawnLocations; //Left Center Right
     private int correctDoorIndex;
     private void Awake() {
         correctDoorIndex = Random.Range(0, spawnLocations.Length);
@@ -13,5 +13,6 @@ public class Room : MonoBehaviour {
         }
     }
 
+    public int CorrectDoorIndex => correctDoorIndex;
     public Vector3 CorrectDoorPos => spawnLocations[correctDoorIndex].mainT.position;
 }

@@ -28,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: -1.5, y: 0, z: 9}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5356320492992876461}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 2021017585886656575}
   - component: {fileID: 3033316701693943812}
   m_Layer: 0
-  m_Name: Door1
+  m_Name: DoorLeft1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 8112111843570237667}
   - component: {fileID: 2581762378458560986}
   m_Layer: 0
-  m_Name: Door3
+  m_Name: DoorRight2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -201,7 +201,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5356320492992876461}
@@ -267,7 +267,7 @@ GameObject:
   - component: {fileID: 2164215914068075306}
   - component: {fileID: 845113326999901206}
   m_Layer: 0
-  m_Name: Door2
+  m_Name: DoorCenter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -329,7 +329,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: -1.5, y: 0, z: 3}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5356320492992876461}
@@ -395,7 +395,7 @@ GameObject:
   - component: {fileID: 4657224137685184933}
   - component: {fileID: 7632791352533934255}
   m_Layer: 0
-  m_Name: Door4
+  m_Name: DoorLeft2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -491,7 +491,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cf6e232df9c96c345a634874f96b76ec, type: 2}
+  - {fileID: 2100000, guid: 14a1fa5fb5619c24f9a4168a39d24238, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -576,8 +576,8 @@ Transform:
   - {fileID: 2021017585886656575}
   - {fileID: 4657224137685184933}
   - {fileID: 2164215914068075306}
-  - {fileID: 8112111843570237667}
   - {fileID: 5827253616899203956}
+  - {fileID: 8112111843570237667}
   - {fileID: 1194051540378849425}
   - {fileID: 8595057733218723392}
   - {fileID: 1646946268848350516}
@@ -602,10 +602,10 @@ MonoBehaviour:
   nextRoom: 4
   spawnLocations:
   - {fileID: 3033316701693943812}
-  - {fileID: 845113326999901206}
-  - {fileID: 2581762378458560986}
   - {fileID: 7632791352533934255}
+  - {fileID: 845113326999901206}
   - {fileID: 2413837895602623793}
+  - {fileID: 2581762378458560986}
 --- !u!1 &7239237524474618397
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,7 +634,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.7069834, y: -0, z: -0, w: 0.7072302}
   m_LocalPosition: {x: 0, y: 0, z: 12}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5356320492992876461}
@@ -700,7 +700,7 @@ GameObject:
   - component: {fileID: 5827253616899203956}
   - component: {fileID: 2413837895602623793}
   m_Layer: 0
-  m_Name: Door5
+  m_Name: DoorRight1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -762,7 +762,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.49991274, y: 0.50008726, z: 0.49991274, w: 0.50008726}
   m_LocalPosition: {x: 1.5, y: 0, z: 3}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5356320492992876461}
@@ -845,7 +845,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.49991274, y: 0.50008726, z: 0.49991274, w: 0.50008726}
   m_LocalPosition: {x: 1.5, y: 0, z: 9}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5356320492992876461}

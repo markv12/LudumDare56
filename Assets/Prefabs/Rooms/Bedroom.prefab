@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2021017585886656575}
   - component: {fileID: 3033316701693943812}
   m_Layer: 0
-  m_Name: Door1
+  m_Name: DoorLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 8112111843570237667}
   - component: {fileID: 2581762378458560986}
   m_Layer: 0
-  m_Name: Door3
+  m_Name: DoorRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -118,7 +118,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5356320492992876461}
@@ -184,7 +184,7 @@ GameObject:
   - component: {fileID: 2164215914068075306}
   - component: {fileID: 845113326999901206}
   m_Layer: 0
-  m_Name: Door2
+  m_Name: DoorCenter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -246,7 +246,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: -4, y: 0, z: 3}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5356320492992876461}
@@ -363,7 +363,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cf6e232df9c96c345a634874f96b76ec, type: 2}
+  - {fileID: 2100000, guid: 63c85c9b3da724d49bd5dd41a1d4bf5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -504,7 +504,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.7069834, y: -0, z: -0, w: 0.7072302}
   m_LocalPosition: {x: 0, y: 0, z: 6}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5356320492992876461}
@@ -587,7 +587,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.49991274, y: 0.50008726, z: 0.49991274, w: 0.50008726}
   m_LocalPosition: {x: 4, y: 0, z: 3}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5356320492992876461}
@@ -966,7 +966,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3652267237168038009, guid: 18ab8adf1265b564bab1642bd1330c99, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.00045157436
+      value: 0.019
       objectReference: {fileID: 0}
     - target: {fileID: 3652267237168038009, guid: 18ab8adf1265b564bab1642bd1330c99, type: 3}
       propertyPath: m_LocalPosition.z
