@@ -479,7 +479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49328c4f1452e834f9a6ee7a57df1597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextRoom: 1
+  nextRoom: 2
   spawnLocations:
   - {fileID: 3033316701693943812}
   - {fileID: 845113326999901206}
@@ -845,7 +845,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1238178467672648849, guid: 47761c1459ae9204581511c8107a3c4c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.457
+      value: -3.406
       objectReference: {fileID: 0}
     - target: {fileID: 1238178467672648849, guid: 47761c1459ae9204581511c8107a3c4c, type: 3}
       propertyPath: m_LocalPosition.y
