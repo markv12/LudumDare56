@@ -23,4 +23,5 @@ public enum Rooms {
     Kitchen,
     Bedroom,
     Hallway,
+    EndRoom,
 }
