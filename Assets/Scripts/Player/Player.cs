@@ -24,6 +24,7 @@ public class Player : MonoBehaviour {
         mainCameraTransform = mainCamera.transform;
         playerStartPos = t.position;
         playerStartRotation = t.rotation;
+        ResetTime();
     }
 
     private void Update() {
@@ -64,5 +65,10 @@ public class Player : MonoBehaviour {
         settingsUI.Open(false, () => {
             SetFPSControllerActive(true);
         });
+    }
+
+    private float startTime;
+    public void ResetTime() {
+        startTime = Time.time;
     }
 }
