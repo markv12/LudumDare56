@@ -20,5 +20,7 @@ public class RoomSpawnLocation : MonoBehaviour {
 
 public enum Rooms {
     StartRoom,
-    Kitchen
+    Kitchen,
+    Bedroom,
+    Hallway,
 }
