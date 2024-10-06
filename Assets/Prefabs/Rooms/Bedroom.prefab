@@ -476,6 +476,7 @@ MonoBehaviour:
   - {fileID: 3033316701693943812}
   - {fileID: 845113326999901206}
   - {fileID: 2581762378458560986}
+  anomalies: []
 --- !u!1 &7239237524474618397
 GameObject:
   m_ObjectHideFlags: 0
@@ -1218,7 +1219,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4118078848965034096, guid: a7a9cf8ca41615e4a8c5a455a0dbe517, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.00000017881393
+      value: 0.013
       objectReference: {fileID: 0}
     - target: {fileID: 4118078848965034096, guid: a7a9cf8ca41615e4a8c5a455a0dbe517, type: 3}
       propertyPath: m_LocalPosition.z

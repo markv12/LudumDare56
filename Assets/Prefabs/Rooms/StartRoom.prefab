@@ -327,6 +327,15 @@ Transform:
   - {fileID: 6544975128381454748}
   - {fileID: 9202588287588351990}
   - {fileID: 5815025162378747943}
+  - {fileID: 5693254992223127398}
+  - {fileID: 6030836813288735260}
+  - {fileID: 4020250546221602059}
+  - {fileID: 8026524623338430249}
+  - {fileID: 2666295187099160430}
+  - {fileID: 6882671800864680576}
+  - {fileID: 9059852121220906952}
+  - {fileID: 4268995972887700364}
+  - {fileID: 7028069043254968769}
   - {fileID: 7776869651555153092}
   - {fileID: 6150075598347252756}
   - {fileID: 7980319753968756806}
@@ -358,13 +367,7 @@ Transform:
   - {fileID: 7130225986076380017}
   - {fileID: 5934917371183990872}
   - {fileID: 2709349538934455617}
-  - {fileID: 9059852121220906952}
   - {fileID: 5357305495282243364}
-  - {fileID: 8026524623338430249}
-  - {fileID: 2666295187099160430}
-  - {fileID: 6882671800864680576}
-  - {fileID: 4268995972887700364}
-  - {fileID: 7028069043254968769}
   - {fileID: 3899504998929463206}
   - {fileID: 5206020891144632080}
   - {fileID: 7961770353610428187}
@@ -431,9 +434,6 @@ Transform:
   - {fileID: 3282984845536743864}
   - {fileID: 1296784571489146262}
   - {fileID: 5444463946602712821}
-  - {fileID: 5693254992223127398}
-  - {fileID: 6030836813288735260}
-  - {fileID: 4020250546221602059}
   - {fileID: 5522918972652344961}
   - {fileID: 604503996829234214}
   - {fileID: 765323035057933423}
@@ -1171,7 +1171,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5356320492992876461}
   - component: {fileID: 2576761147527226274}
-  - component: {fileID: 1220135933590851374}
   m_Layer: 0
   m_Name: StartRoom
   m_TagString: Untagged
@@ -1192,6 +1191,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 8119105940193834851}
+  - {fileID: 2410372768436005126}
   - {fileID: 4422521758731063386}
   - {fileID: 1093895840976790963}
   - {fileID: 6641109525554701304}
@@ -1215,14 +1216,47 @@ MonoBehaviour:
   - {fileID: 845113326999901206}
   - {fileID: 2581762378458560986}
   anomalies:
-  - {fileID: 1220135933590851374}
---- !u!114 &1220135933590851374
+  - {fileID: 397250142674515311}
+  - {fileID: 7946311044447660041}
+--- !u!1 &5959880315758314690
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2410372768436005126}
+  - component: {fileID: 7946311044447660041}
+  m_Layer: 0
+  m_Name: CandleHolderAnomaly1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2410372768436005126
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5959880315758314690}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5356320492992876461}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7946311044447660041
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5876769581304742914}
+  m_GameObject: {fileID: 5959880315758314690}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e85633a91f9c52340a9d1153768d294d, type: 3}
@@ -1230,11 +1264,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteSets:
   - sprites:
-    - {fileID: 7531895464990233167}
+    - {fileID: 5001252332101622595}
+    - {fileID: 6474860281318317625}
+    - {fileID: 4440630242376468782}
   - sprites:
-    - {fileID: 5612873254591042597}
+    - {fileID: 7280478509727499020}
+    - {fileID: 3416561303111471947}
+    - {fileID: 6192076438184408741}
   - sprites:
-    - {fileID: 7125215391145790452}
+    - {fileID: 8633834513973109741}
+    - {fileID: 3554466039249272745}
+    - {fileID: 7773831643123342820}
 --- !u!1 &6131076235315836905
 GameObject:
   m_ObjectHideFlags: 0
@@ -1619,6 +1659,57 @@ Transform:
   - {fileID: 9077997603993142498}
   m_Father: {fileID: 6641109525554701304}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!1 &7908509975448062973
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8119105940193834851}
+  - component: {fileID: 397250142674515311}
+  m_Layer: 0
+  m_Name: GnomaLisaAnomaly
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8119105940193834851
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7908509975448062973}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5356320492992876461}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &397250142674515311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7908509975448062973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85633a91f9c52340a9d1153768d294d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteSets:
+  - sprites:
+    - {fileID: 7531895464990233167}
+  - sprites:
+    - {fileID: 5612873254591042597}
+  - sprites:
+    - {fileID: 7125215391145790452}
 --- !u!1001 &136198137480078423
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3984,13 +4075,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4680934078794134894, guid: 2b2261a64119c1149963ba4590333a77, type: 3}
       propertyPath: m_Name
-      value: candle holder 2 (4)
+      value: candle holderRight2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b2261a64119c1149963ba4590333a77, type: 3}
+--- !u!212 &3554466039249272745 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 1345195324505276219, guid: 2b2261a64119c1149963ba4590333a77, type: 3}
+  m_PrefabInstance: {fileID: 2593818311502545042}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4268995972887700364 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1783879803649663774, guid: 2b2261a64119c1149963ba4590333a77, type: 3}
@@ -4612,7 +4708,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4680934078794134894, guid: 2b2261a64119c1149963ba4590333a77, type: 3}
       propertyPath: m_Name
-      value: candle holder 2 (2)
+      value: candle holderLeft3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4622,6 +4718,11 @@ PrefabInstance:
 --- !u!4 &4020250546221602059 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1783879803649663774, guid: 2b2261a64119c1149963ba4590333a77, type: 3}
+  m_PrefabInstance: {fileID: 3389892929493661205}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &4440630242376468782 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 1345195324505276219, guid: 2b2261a64119c1149963ba4590333a77, type: 3}
   m_PrefabInstance: {fileID: 3389892929493661205}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3672263033878454386
@@ -5304,7 +5405,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4680934078794134894, guid: 2b2261a64119c1149963ba4590333a77, type: 3}
       propertyPath: m_Name
-      value: candle holder 2 (7)
+      value: candle holderCenter2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5314,6 +5415,11 @@ PrefabInstance:
 --- !u!4 &2666295187099160430 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1783879803649663774, guid: 2b2261a64119c1149963ba4590333a77, type: 3}
+  m_PrefabInstance: {fileID: 4449847125830347888}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &3416561303111471947 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 1345195324505276219, guid: 2b2261a64119c1149963ba4590333a77, type: 3}
   m_PrefabInstance: {fileID: 4449847125830347888}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4480230332920604930
@@ -5786,13 +5892,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4680934078794134894, guid: 2b2261a64119c1149963ba4590333a77, type: 3}
       propertyPath: m_Name
-      value: candle holder 2 (8)
+      value: candle holderCenter3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b2261a64119c1149963ba4590333a77, type: 3}
+--- !u!212 &6192076438184408741 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 1345195324505276219, guid: 2b2261a64119c1149963ba4590333a77, type: 3}
+  m_PrefabInstance: {fileID: 5135709633505855902}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6882671800864680576 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1783879803649663774, guid: 2b2261a64119c1149963ba4590333a77, type: 3}
@@ -5984,7 +6095,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4680934078794134894, guid: 2b2261a64119c1149963ba4590333a77, type: 3}
       propertyPath: m_Name
-      value: candle holder 2 (1)
+      value: candle holderLeft2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5994,6 +6105,11 @@ PrefabInstance:
 --- !u!4 &6030836813288735260 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1783879803649663774, guid: 2b2261a64119c1149963ba4590333a77, type: 3}
+  m_PrefabInstance: {fileID: 5435927333345468674}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &6474860281318317625 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 1345195324505276219, guid: 2b2261a64119c1149963ba4590333a77, type: 3}
   m_PrefabInstance: {fileID: 5435927333345468674}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5507389773852371869
@@ -6862,13 +6978,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4680934078794134894, guid: 2b2261a64119c1149963ba4590333a77, type: 3}
       propertyPath: m_Name
-      value: candle holder 2
+      value: candle holderLeft1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b2261a64119c1149963ba4590333a77, type: 3}
+--- !u!212 &5001252332101622595 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 1345195324505276219, guid: 2b2261a64119c1149963ba4590333a77, type: 3}
+  m_PrefabInstance: {fileID: 6323929615050335352}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5693254992223127398 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1783879803649663774, guid: 2b2261a64119c1149963ba4590333a77, type: 3}
@@ -7542,13 +7663,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4680934078794134894, guid: 2b2261a64119c1149963ba4590333a77, type: 3}
       propertyPath: m_Name
-      value: candle holder 2 (3)
+      value: candle holderRight1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b2261a64119c1149963ba4590333a77, type: 3}
+--- !u!212 &8633834513973109741 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 1345195324505276219, guid: 2b2261a64119c1149963ba4590333a77, type: 3}
+  m_PrefabInstance: {fileID: 7312318273230003414}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &9059852121220906952 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1783879803649663774, guid: 2b2261a64119c1149963ba4590333a77, type: 3}
@@ -9254,13 +9380,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4680934078794134894, guid: 2b2261a64119c1149963ba4590333a77, type: 3}
       propertyPath: m_Name
-      value: candle holder 2 (6)
+      value: candle holderCenter1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b2261a64119c1149963ba4590333a77, type: 3}
+--- !u!212 &7280478509727499020 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 1345195324505276219, guid: 2b2261a64119c1149963ba4590333a77, type: 3}
+  m_PrefabInstance: {fileID: 8620572091483913271}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8026524623338430249 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1783879803649663774, guid: 2b2261a64119c1149963ba4590333a77, type: 3}
@@ -9452,7 +9583,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4680934078794134894, guid: 2b2261a64119c1149963ba4590333a77, type: 3}
       propertyPath: m_Name
-      value: candle holder 2 (5)
+      value: candle holderRight3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9462,6 +9593,11 @@ PrefabInstance:
 --- !u!4 &7028069043254968769 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1783879803649663774, guid: 2b2261a64119c1149963ba4590333a77, type: 3}
+  m_PrefabInstance: {fileID: 8739563504986088159}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &7773831643123342820 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 1345195324505276219, guid: 2b2261a64119c1149963ba4590333a77, type: 3}
   m_PrefabInstance: {fileID: 8739563504986088159}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8760708291677657053

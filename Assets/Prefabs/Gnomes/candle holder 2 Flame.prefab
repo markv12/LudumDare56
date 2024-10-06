@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7396524877057147478}
   - component: {fileID: 4569602046472965909}
   m_Layer: 0
-  m_Name: candle holder 2 no flame
+  m_Name: candle holder 2 Flame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 387f087100f49354eb70658811d14ee9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cb5d37a3fe0e14244bb2c7b5d70277e9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
