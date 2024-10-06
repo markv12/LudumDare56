@@ -4,22 +4,29 @@ public class Door : InteractableObject {
     public Transform mainT;
     public Collider mainCollider;
     public Transform hingeT;
+    public Vector3 closedRotation;
+    private Quaternion closedQuaternion;
+    public Vector3 openRotation;
+    private Quaternion openQuaternion;
     public const float DOOR_CLOSE_TIME = 0.8f;
 
     private bool isOpen = false;
+
+    private void Awake() {
+        openQuaternion = Quaternion.Euler(openRotation);
+        closedQuaternion = Quaternion.Euler(closedRotation);
+    }
 
     protected override void DoInteraction() {
         isOpen = !isOpen;
         Animate(isOpen);
     }
 
-    private static readonly Quaternion closedRotation = Quaternion.identity;
-    private static readonly Quaternion openRotation = Quaternion.Euler(0, 0, -110);
     private Coroutine animateRoutine = null;
     private void Animate(bool isOpen) {
         //mainCollider.enabled = !isOpen;
         Quaternion startRotation = hingeT.localRotation;
-        Quaternion endRotation = isOpen ? openRotation : closedRotation;
+        Quaternion endRotation = isOpen ? openQuaternion : closedQuaternion;
         this.EnsureCoroutineStopped(ref animateRoutine);
         animateRoutine = this.CreateWorldAnimRoutine(DOOR_CLOSE_TIME, (float progress) => {
             hingeT.localRotation = Quaternion.Lerp(startRotation, endRotation, Easing.easeInOutSine(0, 1, progress));

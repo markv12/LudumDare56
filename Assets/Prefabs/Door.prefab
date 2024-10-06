@@ -214,6 +214,8 @@ MonoBehaviour:
   mainT: {fileID: 5644944143312858848}
   mainCollider: {fileID: 7176793955383898940}
   hingeT: {fileID: 9003674833095414435}
+  closedRotation: {x: 0, y: 0, z: 0}
+  openRotation: {x: 0, y: 0, z: -110}
 --- !u!1 &5146170152792226545
 GameObject:
   m_ObjectHideFlags: 0
