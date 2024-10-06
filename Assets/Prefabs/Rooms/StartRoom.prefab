@@ -324,6 +324,9 @@ Transform:
   - {fileID: 2752870505286397139}
   - {fileID: 5821812558116415422}
   - {fileID: 6069797145822547210}
+  - {fileID: 6544975128381454748}
+  - {fileID: 9202588287588351990}
+  - {fileID: 5815025162378747943}
   - {fileID: 7776869651555153092}
   - {fileID: 6150075598347252756}
   - {fileID: 7980319753968756806}
@@ -369,9 +372,6 @@ Transform:
   - {fileID: 4429320579271067284}
   - {fileID: 6115663659626423328}
   - {fileID: 6505953798169368165}
-  - {fileID: 9202588287588351990}
-  - {fileID: 5815025162378747943}
-  - {fileID: 6544975128381454748}
   - {fileID: 2992914293915369038}
   - {fileID: 3147683619305008658}
   - {fileID: 4991467062383182664}
@@ -1171,6 +1171,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5356320492992876461}
   - component: {fileID: 2576761147527226274}
+  - component: {fileID: 1220135933590851374}
   m_Layer: 0
   m_Name: StartRoom
   m_TagString: Untagged
@@ -1213,7 +1214,27 @@ MonoBehaviour:
   - {fileID: 3033316701693943812}
   - {fileID: 845113326999901206}
   - {fileID: 2581762378458560986}
-  anomalies: []
+  anomalies:
+  - {fileID: 1220135933590851374}
+--- !u!114 &1220135933590851374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5876769581304742914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e85633a91f9c52340a9d1153768d294d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteSets:
+  - sprites:
+    - {fileID: 7531895464990233167}
+  - sprites:
+    - {fileID: 5612873254591042597}
+  - sprites:
+    - {fileID: 7125215391145790452}
 --- !u!1 &6131076235315836905
 GameObject:
   m_ObjectHideFlags: 0
@@ -2056,7 +2077,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7856170118808407245, guid: afa2b6bbf742880498e523f0c47b9a5b, type: 3}
       propertyPath: m_Name
-      value: gnoma lisa
+      value: gnoma lisaCenter
       objectReference: {fileID: 0}
     - target: {fileID: 8627841389733362681, guid: afa2b6bbf742880498e523f0c47b9a5b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2103,6 +2124,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afa2b6bbf742880498e523f0c47b9a5b, type: 3}
+--- !u!212 &5612873254591042597 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5039113736780451882, guid: afa2b6bbf742880498e523f0c47b9a5b, type: 3}
+  m_PrefabInstance: {fileID: 579391235780215823}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &9202588287588351990 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8627841389733362681, guid: afa2b6bbf742880498e523f0c47b9a5b, type: 3}
@@ -4054,7 +4080,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7856170118808407245, guid: afa2b6bbf742880498e523f0c47b9a5b, type: 3}
       propertyPath: m_Name
-      value: gnoma lisa (1)
+      value: gnoma lisaRight
       objectReference: {fileID: 0}
     - target: {fileID: 8627841389733362681, guid: afa2b6bbf742880498e523f0c47b9a5b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4104,6 +4130,11 @@ PrefabInstance:
 --- !u!4 &5815025162378747943 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8627841389733362681, guid: afa2b6bbf742880498e523f0c47b9a5b, type: 3}
+  m_PrefabInstance: {fileID: 2814572313938435038}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &7125215391145790452 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5039113736780451882, guid: afa2b6bbf742880498e523f0c47b9a5b, type: 3}
   m_PrefabInstance: {fileID: 2814572313938435038}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2841278749919807071
@@ -4338,7 +4369,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7856170118808407245, guid: afa2b6bbf742880498e523f0c47b9a5b, type: 3}
       propertyPath: m_Name
-      value: gnoma lisa (2)
+      value: gnoma lisaLeft
       objectReference: {fileID: 0}
     - target: {fileID: 8627841389733362681, guid: afa2b6bbf742880498e523f0c47b9a5b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4388,6 +4419,11 @@ PrefabInstance:
 --- !u!4 &6544975128381454748 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8627841389733362681, guid: afa2b6bbf742880498e523f0c47b9a5b, type: 3}
+  m_PrefabInstance: {fileID: 3271913764614128229}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &7531895464990233167 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5039113736780451882, guid: afa2b6bbf742880498e523f0c47b9a5b, type: 3}
   m_PrefabInstance: {fileID: 3271913764614128229}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3305367797355367598
