@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 
 public class GnomeFaceColorAnomaly : RoomAnomaly {
-    public SpriteRenderer gnomeFace;
+    public GameObject gnomeFace;
+    public SpriteRenderer gnomeEyeRenderer;
     public Transform gnomeFaceT;
     public SpriteSet[] doorSpriteSetsLCR; //Left Center Right
     public RoomSpawnLocation[] spawnLocationsLCR; //Left Center Right
@@ -22,19 +23,19 @@ public class GnomeFaceColorAnomaly : RoomAnomaly {
         for (int i = 0; i < doorSpriteSetsLCR.Length; i++) {
             doorSpriteSetsLCR[i].SetMaterial(startHueMat);
         }
-        gnomeFace.gameObject.SetActive(false);
+        gnomeFace.SetActive(false);
     }
 
     public override void Activate(int correctDoorIndex) {
         int colorIndexOffset = Random.Range(0, ColorShiftAnomaly.colorHueShifts.Length);
-        int faceDoorIndex = (correctDoorIndex + Random.Range(0, doorSpriteSetsLCR.Length - 2)) % doorSpriteSetsLCR.Length;
+        int faceDoorIndex = (correctDoorIndex + Random.Range(1, doorSpriteSetsLCR.Length - 1)) % doorSpriteSetsLCR.Length;
         for (int i = 0; i < doorSpriteSetsLCR.Length; i++) {
             SpriteSet dss = doorSpriteSetsLCR[i];
             Material hueMat = hueMaterials[(i + colorIndexOffset) % hueMaterials.Length];
             dss.SetMaterial(hueMat);
             if(i == correctDoorIndex) {
-                gnomeFace.material = hueMat;
-                gnomeFace.gameObject.SetActive(true);
+                gnomeEyeRenderer.material = hueMat;
+                gnomeFace.SetActive(true);
             }
             if(i == faceDoorIndex) {
                 Door faceDoor = spawnLocationsLCR[i].airlock.entranceDoor;
