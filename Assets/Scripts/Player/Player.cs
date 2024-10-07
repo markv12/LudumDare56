@@ -25,6 +25,7 @@ public class Player : MonoBehaviour {
         playerStartPos = t.position;
         playerStartRotation = t.rotation;
         ResetTime();
+        _ = AudioManager.Instance; //Ensure Instance
     }
 
     private void Update() {
@@ -70,5 +71,11 @@ public class Player : MonoBehaviour {
     private float startTime;
     public void ResetTime() {
         startTime = Time.time;
+    }
+
+    public float RecordFinishTime() {
+        float finishTime = Time.time - startTime;
+        //Debug.Log("Final Time: " + finishTime);
+        return finishTime;
     }
 }
