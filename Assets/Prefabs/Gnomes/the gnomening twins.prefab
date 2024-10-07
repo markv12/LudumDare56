@@ -98,3 +98,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainT: {fileID: 6354624959743658890}
+  mainRenderer: {fileID: 2688004956035506345}
