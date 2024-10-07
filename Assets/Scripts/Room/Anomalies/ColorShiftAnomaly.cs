@@ -4,7 +4,7 @@ public class ColorShiftAnomaly : RoomAnomaly {
     public SpriteSet indicatorSprites;
     public SpriteSet[] doorSpriteSetsLCR; //Left Center Right
     public Material shiftMaterial;
-    private static readonly float[] colorHueShifts = new float[] { 0.05f, 0.3f, 0.55f, 0.80f };
+    private static readonly float[] colorHueShifts = new float[] { 0.05f, 0.23f, 0.41f, 0.59f, 0.77f };
     private static Material[] hueMaterials;
 
     private void Awake() {

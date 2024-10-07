@@ -18,7 +18,6 @@ namespace UnityStandardAssets.Characters.FirstPerson {
         [SerializeField][Range(0f, 1f)] private float m_RunstepLenghten;
         [SerializeField] private float m_JumpSpeed;
         private float jumpsRemaining;
-        private float wallJumpsRemaining;
         [SerializeField] private float m_GravityMultiplier;
         [SerializeField] private MouseLook m_MouseLook;
         [SerializeField] private CurveControlledBob m_HeadBob = new CurveControlledBob();
@@ -28,12 +27,9 @@ namespace UnityStandardAssets.Characters.FirstPerson {
         [SerializeField] private Transform mainT;
         [SerializeField] private Transform cameraT;
         [SerializeField] private TouchScreenMoveAndLook moveAndLook;
-        public WallHitManager wallHitManager;
 
         private bool hasJumpInput;
         private Vector3 moveDir = Vector3.zero;
-        private Coroutine wallJumpRoutine = null;
-        private Vector3 wallJumpMoveDir = Vector3.zero;
         private Vector3 slideMoveDir = Vector3.zero;
         private CharacterController charController;
         private CollisionFlags lastCollisionFlag;
@@ -77,12 +73,9 @@ namespace UnityStandardAssets.Characters.FirstPerson {
             // the jump state needs to read here to make sure it is not missed
             if (!hasJumpInput && InputUtil.Jump.WasPressed) {
                 if (!charController.isGrounded) {
-                    if (wallHitManager.TryGetWallHit(out Vector3 wallHitNormal) && wallJumpsRemaining > 0) {
-                        wallJumpsRemaining--;
-                        DoWallJump(wallHitNormal);
-                    } else if (jumpsRemaining > 0) {
+                   if (jumpsRemaining > 0) {
                         hasJumpInput = true;
-                    }
+                   }
                 } else {
                     hasJumpInput = true;
                 }
@@ -110,16 +103,6 @@ namespace UnityStandardAssets.Characters.FirstPerson {
             isJumping = false;
         }
 
-        private void DoWallJump(Vector3 wallHitNormal) {
-            moveDir.y = Mathf.Max(0, moveDir.y);
-            this.EnsureCoroutineStopped(ref wallJumpRoutine);
-            fpsSounds.PlayJumpSound();
-            Vector3 jumpDir = Vector3.Lerp(wallHitNormal, Vector3.up, 0.5f) * 25;
-            wallJumpRoutine = this.CreateWorldAnimRoutine(1f, (float progress) => {
-                wallJumpMoveDir = Vector3.Lerp(jumpDir, Vector3.zero, progress);
-            });
-        }
-
         private void ApplyMove(float speed, Vector3 direction) {
             Vector3 groundMove = GetMoveRelativeToGround(direction);
             moveDir.x = groundMove.x * speed;
@@ -128,7 +111,6 @@ namespace UnityStandardAssets.Characters.FirstPerson {
             if (charController.isGrounded) {
                 moveDir.y = -10;
                 jumpsRemaining = 2;
-                wallJumpsRemaining = 3;
             } else {
                 moveDir += m_GravityMultiplier * Time.deltaTime * Physics.gravity;
             }
@@ -140,7 +122,7 @@ namespace UnityStandardAssets.Characters.FirstPerson {
                 isJumping = true;
             }
             if (charController.enabled) {
-                lastCollisionFlag = charController.Move((moveDir + wallJumpMoveDir + slideMoveDir) * Time.deltaTime);
+                lastCollisionFlag = charController.Move((moveDir + slideMoveDir) * Time.deltaTime);
             }
 
             ProgressStepCycle(groundMove, speed);

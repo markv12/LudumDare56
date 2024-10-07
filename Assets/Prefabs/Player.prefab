@@ -316,7 +316,6 @@ GameObject:
   - component: {fileID: 1397883006744776486}
   - component: {fileID: 8513072604473454038}
   - component: {fileID: 6010280184093432879}
-  - component: {fileID: 8512761158750640562}
   - component: {fileID: 1448534745781729428}
   m_Layer: 3
   m_Name: Player
@@ -397,12 +396,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05ec5cf00ca181d45a42ba1870e148c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 5.5
-  runSpeed: 11
+  walkSpeed: 5
+  runSpeed: 5
   crouchSpeed: 4.5
   crouchHeight: 0.8
   m_RunstepLenghten: 0.7
-  m_JumpSpeed: 7
+  m_JumpSpeed: 5
   m_GravityMultiplier: 2
   m_MouseLook:
     XSensitivity: 0.4
@@ -477,7 +476,6 @@ MonoBehaviour:
   mainT: {fileID: 8513072604476314262}
   cameraT: {fileID: 8513072604476314260}
   moveAndLook: {fileID: 6010280184093432879}
-  wallHitManager: {fileID: 8512761158750640562}
 --- !u!114 &1397883006744776486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -534,23 +532,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79fc4bff88d84ad44acdeffa37de3d61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8512761158750640562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8513072604476346038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3679c2514b0b4ce40bd3a9e6b15663c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainT: {fileID: 8513072604476314262}
-  yOffset: 0.85
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 23
 --- !u!114 &1448534745781729428
 MonoBehaviour:
   m_ObjectHideFlags: 0

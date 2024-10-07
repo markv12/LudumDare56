@@ -8,7 +8,7 @@ public class Door : InteractableObject {
     private Quaternion closedQuaternion;
     public Vector3 openRotation;
     private Quaternion openQuaternion;
-    public const float DOOR_CLOSE_TIME = 0.8f;
+    public const float DOOR_CLOSE_TIME = 0.6f;
     public AudioSource doorSound;
     private bool isOpen = false;
 
