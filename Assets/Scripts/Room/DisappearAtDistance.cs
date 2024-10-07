@@ -10,8 +10,8 @@ public class DisappearAtDistasnce : MonoBehaviour {
             disappeared = true;
             Color startColor = mainRenderer.color;
             Color endColor = startColor.SetA(0);
-            this.CreateWorldAnimRoutine(0.75f, (float progress) => {
-                mainRenderer.color = Color.Lerp(startColor, endColor, progress);
+            this.CreateWorldAnimRoutine(1f, (float progress) => {
+                mainRenderer.color = Color.Lerp(startColor, endColor, Easing.easeOutSine(0, 1, progress));
             }, () => {
                 Destroy(gameObject);
             });

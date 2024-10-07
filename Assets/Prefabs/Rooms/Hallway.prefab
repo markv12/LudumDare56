@@ -1832,6 +1832,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5356320492992876461}
     m_Modifications:
+    - target: {fileID: 5039113736780451882, guid: 5b4f6c3e6e8c7ef45af087f7e708df55, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4ee7ded85daddaf4da51628f25000f70, type: 3}
     - target: {fileID: 7856170118808407245, guid: 5b4f6c3e6e8c7ef45af087f7e708df55, type: 3}
       propertyPath: m_Name
       value: Pretty WomanLeft1
@@ -2032,6 +2036,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5356320492992876461}
     m_Modifications:
+    - target: {fileID: 5039113736780451882, guid: 5b4f6c3e6e8c7ef45af087f7e708df55, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4ee7ded85daddaf4da51628f25000f70, type: 3}
     - target: {fileID: 7856170118808407245, guid: 5b4f6c3e6e8c7ef45af087f7e708df55, type: 3}
       propertyPath: m_Name
       value: Pretty WomanCenter
@@ -2235,6 +2243,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5356320492992876461}
     m_Modifications:
+    - target: {fileID: 5039113736780451882, guid: 5b4f6c3e6e8c7ef45af087f7e708df55, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4ee7ded85daddaf4da51628f25000f70, type: 3}
     - target: {fileID: 7856170118808407245, guid: 5b4f6c3e6e8c7ef45af087f7e708df55, type: 3}
       propertyPath: m_Name
       value: Pretty WomanRight1
@@ -2302,6 +2314,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5356320492992876461}
     m_Modifications:
+    - target: {fileID: 5039113736780451882, guid: 5b4f6c3e6e8c7ef45af087f7e708df55, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4ee7ded85daddaf4da51628f25000f70, type: 3}
     - target: {fileID: 7856170118808407245, guid: 5b4f6c3e6e8c7ef45af087f7e708df55, type: 3}
       propertyPath: m_Name
       value: Pretty WomanRight2
@@ -2706,6 +2722,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5356320492992876461}
     m_Modifications:
+    - target: {fileID: 5039113736780451882, guid: 5b4f6c3e6e8c7ef45af087f7e708df55, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4ee7ded85daddaf4da51628f25000f70, type: 3}
     - target: {fileID: 7856170118808407245, guid: 5b4f6c3e6e8c7ef45af087f7e708df55, type: 3}
       propertyPath: m_Name
       value: Pretty WomanLeft2

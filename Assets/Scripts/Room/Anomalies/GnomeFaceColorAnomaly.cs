@@ -27,7 +27,7 @@ public class GnomeFaceColorAnomaly : RoomAnomaly {
 
     public override void Activate(int correctDoorIndex) {
         int colorIndexOffset = Random.Range(0, ColorShiftAnomaly.colorHueShifts.Length);
-        int faceDoorIndex = (correctDoorIndex + Random.Range(0, doorSpriteSetsLCR.Length - 1)) % doorSpriteSetsLCR.Length;
+        int faceDoorIndex = (correctDoorIndex + Random.Range(0, doorSpriteSetsLCR.Length - 2)) % doorSpriteSetsLCR.Length;
         for (int i = 0; i < doorSpriteSetsLCR.Length; i++) {
             SpriteSet dss = doorSpriteSetsLCR[i];
             Material hueMat = hueMaterials[(i + colorIndexOffset) % hueMaterials.Length];
