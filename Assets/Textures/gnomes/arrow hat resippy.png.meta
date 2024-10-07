@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ebbee46d2629ac24f863b7c7e16e2785
+guid: 600d59e75f6f97c49a8bb44d1b520497
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1000
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -121,112 +121,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: plate_cutlery_0
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 383
-        width: 124
-        height: 119
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca3f4a7768b4b614c83723ed59e4569b
-      internalID: 143386099
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plate_cutlery_1
-      rect:
-        serializedVersion: 2
-        x: 136
-        y: 376
-        width: 128
-        height: 127
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 10204ee28d0145a45acb3648281b4a85
-      internalID: -1987856282
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plate_cutlery_2
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 383
-        width: 128
-        height: 121
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8faa12ba60b25e6499873660679d6491
-      internalID: 144161253
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plate_cutlery_3
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 135
-        width: 235
-        height: 233
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: af230fc400ab83841865c221fc8e638b
-      internalID: 1669506112
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: plate_cutlery_4
-      rect:
-        serializedVersion: 2
-        x: 272
-        y: 216
-        width: 144
-        height: 152
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f5304ae6d9d2002468f90693a0e23ca8
-      internalID: -2077701318
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -237,12 +132,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      plate_cutlery_0: 143386099
-      plate_cutlery_1: -1987856282
-      plate_cutlery_2: 144161253
-      plate_cutlery_3: 1669506112
-      plate_cutlery_4: -2077701318
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
