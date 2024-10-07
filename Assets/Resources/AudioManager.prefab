@@ -183,14 +183,6 @@ MonoBehaviour:
   - {fileID: 1294010166357314729}
   - {fileID: 4922614934095088146}
   - {fileID: 8618506429726683218}
-  success: {fileID: 0}
-  failure: {fileID: 0}
-  startDrawing: {fileID: 0}
-  brushes: []
-  talk: {fileID: 0}
-  paperFlip: {fileID: 0}
-  save: {fileID: 0}
-  gameOver: {fileID: 0}
 --- !u!1 &3055700970617319652
 GameObject:
   m_ObjectHideFlags: 0

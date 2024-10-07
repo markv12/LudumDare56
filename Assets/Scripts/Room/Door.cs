@@ -9,7 +9,7 @@ public class Door : InteractableObject {
     public Vector3 openRotation;
     private Quaternion openQuaternion;
     public const float DOOR_CLOSE_TIME = 0.8f;
-
+    public AudioSource doorSound;
     private bool isOpen = false;
 
     private void Awake() {
@@ -31,6 +31,9 @@ public class Door : InteractableObject {
         animateRoutine = this.CreateWorldAnimRoutine(DOOR_CLOSE_TIME, (float progress) => {
             hingeT.localRotation = Quaternion.Lerp(startRotation, endRotation, Easing.easeInOutSine(0, 1, progress));
         });
+        if(doorSound != null) {
+            doorSound.Play();
+        }
     }
 
     public void Close() {
