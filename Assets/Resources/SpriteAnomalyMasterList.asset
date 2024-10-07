@@ -19,3 +19,5 @@ MonoBehaviour:
     anomalySprite: {fileID: 21300000, guid: cb5d37a3fe0e14244bb2c7b5d70277e9, type: 3}
   - normalSprite: {fileID: 21300000, guid: 21bac6c969a3e2d4cbab5817f1678136, type: 3}
     anomalySprite: {fileID: 21300000, guid: 5ec0782cba742a5479b01e96d0be75fd, type: 3}
+  - normalSprite: {fileID: 21300000, guid: 81dfd5e4360a6f446b6b206e1ed563a6, type: 3}
+    anomalySprite: {fileID: 21300000, guid: 37dedca56de082048bcdf8a571248b37, type: 3}

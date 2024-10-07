@@ -203,6 +203,7 @@ MonoBehaviour:
   mainRenderer: {fileID: 5580060577498643779}
   audioSource: {fileID: 2283081625153837846}
   finishTimeText: {fileID: 249988547055798673}
+  mainCollider: {fileID: 4786539757258060918}
 --- !u!82 &2283081625153837846
 AudioSource:
   m_ObjectHideFlags: 0
