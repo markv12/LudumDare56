@@ -28,12 +28,14 @@ public class Player : MonoBehaviour {
         _ = AudioManager.Instance; //Ensure Instance
     }
 
+    private bool reloadTriggered = false;
     private void Update() {
         if (InputUtil.Cancel.WasPressed || InputUtil.PauseMenu.WasPressed) {
             OpenSettingsUI();
         }
-        if (Time.frameCount % 5 == 0 && t.position.y < -120) {
-            ReturnToEntrance();
+        if (Time.frameCount % 5 == 0 && t.position.y < -100 && !reloadTriggered) {
+            reloadTriggered = true;
+            SettingsUI.ReloadScene();
         }
     }
 
@@ -43,22 +45,6 @@ public class Player : MonoBehaviour {
         firstPersonController.enabled = isActive;
         Cursor.lockState = isActive && !InputUtil.IsMobile ? CursorLockMode.Locked : CursorLockMode.None;
         Cursor.visible = !isActive || InputUtil.IsMobile;
-    }
-
-    public void ReturnToEntrance() {
-        StartCoroutine(ReturnRoutine());
-
-        IEnumerator ReturnRoutine() {
-            characterController.enabled = false;
-            firstPersonController.enabled = false;
-            yield return null;
-            t.SetPositionAndRotation(playerStartPos, playerStartRotation);
-            firstPersonController.ResetMouseLook();
-            firstPersonController.ResetCameraRotation();
-            yield return null;
-            characterController.enabled = true;
-            firstPersonController.enabled = true;
-        }
     }
 
     public void OpenSettingsUI() {

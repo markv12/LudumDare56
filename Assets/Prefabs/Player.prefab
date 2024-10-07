@@ -358,6 +358,7 @@ MonoBehaviour:
   mainCamera: {fileID: 4948270499784186225}
   characterController: {fileID: 8513072604464528246}
   firstPersonController: {fileID: 8513072604465101654}
+  settingsUI: {fileID: 0}
 --- !u!143 &8513072604464528246
 CharacterController:
   m_ObjectHideFlags: 0
@@ -378,7 +379,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 3
   m_Height: 1.6
-  m_Radius: 0.5
+  m_Radius: 0.4
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08

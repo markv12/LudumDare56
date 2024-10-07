@@ -83,6 +83,10 @@ public class SettingsUI : MonoBehaviour {
         gameObject.SetActive(false);
         graphicsSettingsUI.SetActive(false);
         creditsPanel.SetActive(false);
+        ReloadScene();
+    }
+
+    public static void ReloadScene() {
         LoadingScreen.LoadScene("MainScene");
     }
 
