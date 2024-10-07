@@ -21,3 +21,11 @@ MonoBehaviour:
     anomalySprite: {fileID: 21300000, guid: 5ec0782cba742a5479b01e96d0be75fd, type: 3}
   - normalSprite: {fileID: 21300000, guid: 81dfd5e4360a6f446b6b206e1ed563a6, type: 3}
     anomalySprite: {fileID: 21300000, guid: 37dedca56de082048bcdf8a571248b37, type: 3}
+  - normalSprite: {fileID: 21300000, guid: fd568989eae1d8b41a7d3db38751a9ef, type: 3}
+    anomalySprite: {fileID: 21300000, guid: 63caa505e84752f468b5469cc7e42214, type: 3}
+  - normalSprite: {fileID: 21300000, guid: 3ac1424868ea9d3479ee2477048fe9d7, type: 3}
+    anomalySprite: {fileID: 21300000, guid: ab7ca3dd7a3428146aaabaa98e5ebb42, type: 3}
+  - normalSprite: {fileID: 21300000, guid: 4ee7ded85daddaf4da51628f25000f70, type: 3}
+    anomalySprite: {fileID: 21300000, guid: 0e4b2ea207c11f24f9c400daf6b64981, type: 3}
+  - normalSprite: {fileID: 21300000, guid: 04eb574d6a6c08c4fbde7950e0ff6014, type: 3}
+    anomalySprite: {fileID: 21300000, guid: 661d4ed0ea87b7844b4adf6684f30e1a, type: 3}
