@@ -13,7 +13,10 @@ public class Room : MonoBehaviour {
             Rooms room = i == correctDoorIndex ? nextRoom : Rooms.StartRoom;
             rsl.Setup(room, gameObject);
         }
-        if(anomalies.Length > 0) {
+    }
+
+    private void Start() {
+        if (anomalies.Length > 0) {
             anomalies[Random.Range(0, anomalies.Length)].Activate(correctDoorIndex);
         }
     }

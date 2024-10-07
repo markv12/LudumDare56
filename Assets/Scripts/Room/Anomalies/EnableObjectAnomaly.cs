@@ -12,7 +12,7 @@ public class EnableObjectAnomaly : RoomAnomaly {
             ObjectSet objectSet = objectSetsLCR[i];
             int randomIndex = (i == correctDoorIndex) ? Random.Range(0, objectSet.objects.Length) : -1;
             for (int j = 0; j < objectSet.objects.Length; j++) {
-                objectSet.objects[i].SetActive(j == randomIndex);
+                objectSet.objects[j].SetActive(j == randomIndex);
             }
         }
     }
