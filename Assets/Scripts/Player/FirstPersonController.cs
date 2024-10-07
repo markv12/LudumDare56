@@ -191,7 +191,7 @@ namespace UnityStandardAssets.Characters.FirstPerson {
                     float height = Mathf.Lerp(normalHeight, crouchHeight, crouchLevel);
                     charController.height = height;
                     charController.center = new Vector3(0, height * 0.5f, 0);
-                    charController.radius = Mathf.Min(0.5f, height * 0.5f);
+                    charController.radius = Mathf.Min(0.4f, height * 0.4f);
                     cameraT.localPosition = CameraPosition;
                 }
             }

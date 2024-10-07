@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 public class RoomSpawnLocation : MonoBehaviour {
     public Transform mainT;
-
+    [NonSerialized] public AirlockPassage airlock;
     private static AirlockPassage airlockPassagePrefab;
     private static void EnsurePrefab() {
         if(airlockPassagePrefab == null) {
@@ -12,9 +13,9 @@ public class RoomSpawnLocation : MonoBehaviour {
 
     public void Setup(Rooms nextRoom, GameObject roomToDelete) {
         EnsurePrefab();
-        AirlockPassage newAirlock = Instantiate(airlockPassagePrefab, mainT);
+        airlock = Instantiate(airlockPassagePrefab, mainT);
         //newAirlock.mainT.SetPositionAndRotation(mainT.position, mainT.rotation);
-        newAirlock.Setup(nextRoom, roomToDelete);
+        airlock.Setup(nextRoom, roomToDelete);
     }
 }
 

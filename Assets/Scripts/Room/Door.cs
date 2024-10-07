@@ -13,6 +13,15 @@ public class Door : InteractableObject {
     private bool isOpen = false;
 
     private void Awake() {
+        RefreshQuaternions();
+    }
+
+    public void SetOpenRotation(Vector3 _openRotation) {
+        openRotation = _openRotation;
+        RefreshQuaternions();
+    }
+
+    private void RefreshQuaternions() {
         openQuaternion = Quaternion.Euler(openRotation);
         closedQuaternion = Quaternion.Euler(closedRotation);
     }
@@ -32,6 +41,7 @@ public class Door : InteractableObject {
             hingeT.localRotation = Quaternion.Lerp(startRotation, endRotation, Easing.easeInOutSine(0, 1, progress));
         });
         if(doorSound != null) {
+            doorSound.volume = SettingsManager.SFXVolume;
             doorSound.Play();
         }
     }
