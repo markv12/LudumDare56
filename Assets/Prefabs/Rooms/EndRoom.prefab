@@ -2793,7 +2793,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainT: {fileID: 5799909052558653506}
   speed: 100
-  magnitude: {x: 0.001, y: 0.001, z: 0.001}
+  magnitude: {x: -0.001, y: 0.0011, z: 0.0014}
 --- !u!1001 &4385118257945178551
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2964,7 +2964,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainT: {fileID: 4263467533543796832}
   speed: 100
-  magnitude: {x: 0.001, y: 0.001, z: 0.001}
+  magnitude: {x: 0.001, y: 0.001, z: -0.0017}
 --- !u!1001 &4464322948116097293
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3483,7 +3483,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainT: {fileID: 5033421312060743630}
   speed: 100
-  magnitude: {x: 0.001, y: 0.001, z: 0.001}
+  magnitude: {x: 0.001, y: -0.001, z: 0.001}
 --- !u!1001 &5958941587805599410
 PrefabInstance:
   m_ObjectHideFlags: 0
