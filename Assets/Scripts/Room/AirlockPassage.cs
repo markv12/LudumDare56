@@ -23,7 +23,9 @@ public class AirlockPassage : MonoBehaviour {
     private IEnumerator Trigger() {
         entranceDoor.interactable = false;
         entranceDoor.Close();
-        GameObject newRoom = Instantiate(RoomMasterList.Instance.GetRoomForEnum(nextRoom));
+        GameObject roomPrefab = RoomMasterList.Instance.GetRoomForEnum(nextRoom);
+        yield return null;
+        GameObject newRoom = Instantiate(roomPrefab);
         newRoom.transform.SetPositionAndRotation(exitDoor.mainT.position, exitDoor.mainT.rotation);
         mainT.SetParent(newRoom.transform, true);
         yield return WaitUtil.GetWait(Door.DOOR_CLOSE_TIME);
