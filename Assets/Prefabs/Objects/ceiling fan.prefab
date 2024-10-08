@@ -180,7 +180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainT: {fileID: 4195494726281557573}
-  spinSpeed: {x: 0, y: 60, z: 0}
+  spinSpeed: {x: 0, y: -60, z: 0}
 --- !u!1 &5613163231137074005
 GameObject:
   m_ObjectHideFlags: 0

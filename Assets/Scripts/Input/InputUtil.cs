@@ -10,8 +10,8 @@ public class InputUtil : MonoBehaviour {
     public static readonly ControlBinding Interact = new ControlBinding(Key.E, "interact");
     public static readonly ControlBinding Cancel = new ControlBinding(Key.Escape, "cancel");
     public static readonly ControlBinding Jump = new ControlBinding(Key.Space, "jump");
-    public static readonly ControlBinding ToggleRun = new ControlBinding(new Key[] { Key.LeftShift, Key.RightShift }, "togglerun");
-    public static readonly ControlBinding Crouch = new ControlBinding(new Key[] { Key.LeftCtrl, Key.RightCtrl, Key.LeftCommand, Key.RightCommand }, "crouch");
+    public static readonly ControlBinding ToggleRun = new ControlBinding(new Key[] { }, "togglerun");
+    public static readonly ControlBinding Crouch = new ControlBinding(new Key[] { Key.LeftCtrl, Key.RightCtrl, Key.LeftShift, Key.RightShift }, "crouch");
     public static readonly ControlBinding PauseMenu = new ControlBinding(Key.P, "pausemenu");
     public static readonly ControlBinding Gun = new ControlBinding(Key.G, "gun");
     public static readonly ControlBinding ThrowGrenade = new ControlBinding(Key.V, "throwgrenade");

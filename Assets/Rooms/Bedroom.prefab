@@ -1002,6 +1002,7 @@ MonoBehaviour:
   - {fileID: 8736483349034659126}
   - {fileID: 8193333868234067971}
   - {fileID: 6525027747650364118}
+  - {fileID: 2966857620187527154}
 --- !u!1 &7239237524474618397
 GameObject:
   m_ObjectHideFlags: 0
@@ -2261,7 +2262,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8627841389733362681, guid: 09dffa5fb11cf0d4a81b8275d485a927, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.83142483
+      value: 0.862
       objectReference: {fileID: 0}
     - target: {fileID: 8627841389733362681, guid: 09dffa5fb11cf0d4a81b8275d485a927, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3164,7 +3165,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8627841389733362681, guid: 09dffa5fb11cf0d4a81b8275d485a927, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.131
+      value: 2.098
       objectReference: {fileID: 0}
     - target: {fileID: 8627841389733362681, guid: 09dffa5fb11cf0d4a81b8275d485a927, type: 3}
       propertyPath: m_LocalRotation.w
