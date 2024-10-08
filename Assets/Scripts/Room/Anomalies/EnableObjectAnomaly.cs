@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 
 public class EnableObjectAnomaly : RoomAnomaly {
+    public bool hideNotShow;
     public ObjectSet[] objectSetsLCR; //Left Center Right
 
     private void Awake() {
@@ -12,7 +13,8 @@ public class EnableObjectAnomaly : RoomAnomaly {
             ObjectSet objectSet = objectSetsLCR[i];
             int randomIndex = (i == correctDoorIndex) ? Random.Range(0, objectSet.objects.Length) : -1;
             for (int j = 0; j < objectSet.objects.Length; j++) {
-                objectSet.objects[j].SetActive(j == randomIndex);
+                bool show = hideNotShow ? j != randomIndex : j == randomIndex;
+                objectSet.objects[j].SetActive(show);
             }
         }
     }

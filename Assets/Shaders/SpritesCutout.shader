@@ -17,7 +17,7 @@ Shader "Sprites/Cutout"
     {
         Tags
         {
-            "Queue"="Transparent"
+            "Queue"="AlphaTest"
             "IgnoreProjector"="True"
             "RenderType"="TransparentCutout"
             "PreviewType"="Plane"
