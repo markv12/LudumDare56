@@ -19,7 +19,7 @@ namespace Dan.Main
         private const string FORM_PUBLIC_KEY = "publicKey", FORM_USERNAME = "username", FORM_SCORE = "score",
             FORM_EXTRA = "extra", FORM_USER_GUID = "userGuid";
 
-        [RuntimeInitializeOnLoadMethod]
+        //[RuntimeInitializeOnLoadMethod]
         private static void Initialize()
         {
             Log("Initializing...");

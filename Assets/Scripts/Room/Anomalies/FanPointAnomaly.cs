@@ -18,7 +18,7 @@ public class FanPointAnomaly : RoomAnomaly {
 
     private void Update() {
         if(jiggleRotation > -360) {
-            spinT.localRotation = Quaternion.Euler(0, jiggleRotation + Mathf.Sin(Time.time * 5) * 0.35f, 0);
+            spinT.localRotation = Quaternion.Euler(0, jiggleRotation + Mathf.Sin(Time.time * 10) * 0.45f, 0);
         }
     }
 }

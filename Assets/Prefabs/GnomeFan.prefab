@@ -48,7 +48,7 @@ MonoBehaviour:
   gnomePrefab: {fileID: 4686769673233589151, guid: ab3fd758a9af5464fa208fe0f73e90df, type: 3}
   gnomeScale: 10
   radius: 6.5
-  fanSegments: 80
+  fanSegments: 85
   spiralLength: 60
   revolutionCount: 4.5
   mainSpinSpeed: -5

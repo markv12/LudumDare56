@@ -11,7 +11,7 @@ public class KingGnomeFinish : InteractableObject {
         mainCollider.enabled = false;
         finishTimeText.text = Player.instance.RecordFinishTime().ToString("0.00");
         finishTimeText.gameObject.SetActive(true);
-        audioSource.volume = SettingsManager.SFXVolume;
+        audioSource.volume = SettingsManager.SFXVolume * 0.7f;
         audioSource.Play();
     }
 }

@@ -1160,6 +1160,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5637770200962921010}
   - component: {fileID: 277294032228804619}
+  - component: {fileID: 4307329505493824358}
   m_Layer: 0
   m_Name: GnomeFace
   m_TagString: Untagged
@@ -1235,6 +1236,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &4307329505493824358
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7348155984416668615}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.15, y: 2.048, z: 0.20000005}
+  m_Center: {x: 0, y: 1.024, z: 0.1}
 --- !u!1 &7368284818036920620
 GameObject:
   m_ObjectHideFlags: 0

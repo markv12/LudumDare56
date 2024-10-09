@@ -9,6 +9,18 @@ public class AirlockPassage : MonoBehaviour {
     private GameObject roomToDelete;
     private Rooms nextRoom;
 
+    private void Awake() {
+        exitDoor.OnOpen += ExitDoor_OnOpen;
+    }
+
+    private bool openedOnce = false;
+    private void ExitDoor_OnOpen() {
+        if(!openedOnce && nextRoom == Rooms.StartRoom) {
+            openedOnce = true;
+            AudioManager.Instance.PlayIncorrectRoomSound();
+        }
+    }
+
     public void Setup(Rooms _nextRoom, GameObject _roomToDelete) {
         nextRoom = _nextRoom;
         roomToDelete = _roomToDelete;
@@ -29,7 +41,7 @@ public class AirlockPassage : MonoBehaviour {
         newRoom.transform.SetPositionAndRotation(exitDoor.mainT.position, exitDoor.mainT.rotation);
         mainT.SetParent(newRoom.transform, true);
         yield return WaitUtil.GetWait(Door.DOOR_CLOSE_TIME);
-        if(roomToDelete != null) {
+        if (roomToDelete != null) {
             Destroy(roomToDelete);
         } else {
             Debug.Log("No Room to Delete!");

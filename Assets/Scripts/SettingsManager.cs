@@ -42,12 +42,12 @@ public static class SettingsManager {
         get {
 
             if (!PlayerPrefs.HasKey(LOOK_SPEED)) {
-                PlayerPrefs.SetFloat(LOOK_SPEED, SettingsUI.MAX_LOOK_SPEED / 2f);
+                PlayerPrefs.SetFloat(LOOK_SPEED, SettingsUI.MAX_LOOK_SPEED / 4f);
             }
             return PlayerPrefs.GetFloat(LOOK_SPEED);
         }
         set {
-            PlayerPrefs.SetFloat(LOOK_SPEED, Mathf.Min(2f, Mathf.Max(0f, value)));
+            PlayerPrefs.SetFloat(LOOK_SPEED, Mathf.Min(SettingsUI.MAX_LOOK_SPEED, Mathf.Max(0f, value)));
         }
     }
 

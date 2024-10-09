@@ -184,6 +184,7 @@ MonoBehaviour:
   - {fileID: 1294010166357314729}
   - {fileID: 4922614934095088146}
   - {fileID: 8618506429726683218}
+  incorrectRoomSound: {fileID: 8300000, guid: a6774de540829904393d23a3291fdcfa, type: 3}
 --- !u!1 &3055700970617319652
 GameObject:
   m_ObjectHideFlags: 0

@@ -25,6 +25,7 @@ public class Player : MonoBehaviour {
         playerStartRotation = t.rotation;
         ResetTime();
         _ = AudioManager.Instance; //Ensure Instance
+        _ = RoomMasterList.Instance; //Ensure Instance
     }
 
     private bool reloadTriggered = false;

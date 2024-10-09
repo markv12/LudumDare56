@@ -88,7 +88,7 @@ namespace WebGLSupport
             OnResizeEvent();
         }
 
-        [RuntimeInitializeOnLoadMethod]
+        //[RuntimeInitializeOnLoadMethod]
         static void RuntimeInitializeOnLoadMethod()
         {
             Init();

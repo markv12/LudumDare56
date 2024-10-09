@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Door : InteractableObject {
@@ -11,6 +12,7 @@ public class Door : InteractableObject {
     public const float DOOR_CLOSE_TIME = 0.6f;
     public AudioSource doorSound;
     private bool isOpen = false;
+    public event Action OnOpen;
 
     private void Awake() {
         RefreshQuaternions();
@@ -43,6 +45,9 @@ public class Door : InteractableObject {
         if(doorSound != null) {
             doorSound.volume = SettingsManager.SFXVolume;
             doorSound.Play();
+        }
+        if (isOpen) {
+            OnOpen?.Invoke();
         }
     }
 
