@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -11,7 +10,15 @@ public class InputUtil : MonoBehaviour {
     public static readonly ControlBinding Cancel = new ControlBinding(Key.Escape, "cancel");
     public static readonly ControlBinding Jump = new ControlBinding(Key.Space, "jump");
     public static readonly ControlBinding ToggleRun = new ControlBinding(new Key[] { }, "togglerun");
-    public static readonly ControlBinding Crouch = new ControlBinding(new Key[] { Key.LeftCtrl, Key.RightCtrl, Key.LeftShift, Key.RightShift }, "crouch");
+    public static readonly ControlBinding Crouch = new ControlBinding(new Key[] {
+#if !UNITY_WEBGL
+        Key.LeftCtrl,
+        Key.RightCtrl,
+#endif
+        Key.LeftShift,
+        Key.RightShift,
+        Key.C,
+    }, "crouch");
     public static readonly ControlBinding PauseMenu = new ControlBinding(Key.P, "pausemenu");
     public static readonly ControlBinding Gun = new ControlBinding(Key.G, "gun");
     public static readonly ControlBinding ThrowGrenade = new ControlBinding(Key.V, "throwgrenade");

@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class FanPointAnomaly : RoomAnomaly {
@@ -18,7 +17,7 @@ public class FanPointAnomaly : RoomAnomaly {
 
     private void Update() {
         if(jiggleRotation > -360) {
-            spinT.localRotation = Quaternion.Euler(0, jiggleRotation + Mathf.Sin(Time.time * 10) * 0.45f, 0);
+            spinT.localRotation = Quaternion.Euler(0, jiggleRotation + Mathf.Sin(Time.time * 12) * 0.45f, 0);
         }
     }
 }
